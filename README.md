@@ -12,5 +12,10 @@
 - Usee the "splat" operator (aka *) to allow a function to receive any number of arguments
 - If you have an iterable object and want to pass its elements to a function, just preface it with * in the function call
 
+### Exercise 3 - Run timing
+- Empty string and the numeric 0 are considered to be `False`
+- Use `not` in front of a variable that might be empty to evaluate `False`
+- Wrap user input in `try` in case the user gives you an illegal value
+
 ### Acknowledgements
 Python Workout by Reuven Lerner, Published by Manning Publications, 2020
