@@ -6,4 +6,4 @@ def mysum(*numbers):
     return output
 
 
-print(mysum(1,2,3))
+print(mysum(1, 2, 3))

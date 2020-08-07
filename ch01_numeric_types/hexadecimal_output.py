@@ -5,4 +5,5 @@ def hex_output():
         decnum += int(digit, base=16) * (16 ** power)
     print(decnum)
 
+
 hex_output()
