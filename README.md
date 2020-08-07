@@ -17,5 +17,10 @@
 - Use `not` in front of a variable that might be empty to evaluate `False`
 - Wrap user input in `try` in case the user gives you an illegal value
 
+### Excercise 4 - Hexadecimal Output
+- `enumerate` returns a two-element tuple with each iteration. This provides the numeric index of each iteration.
+- `reversed` returns a new iterable
+- `**` operator is used for exponentiation
+
 ### Acknowledgements
 Python Workout by Reuven Lerner, Published by Manning Publications, 2020
