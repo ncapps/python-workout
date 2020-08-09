@@ -17,10 +17,17 @@
 - Use `not` in front of a variable that might be empty to evaluate `False`
 - Wrap user input in `try` in case the user gives you an illegal value
 
-### Excercise 4 - Hexadecimal Output
+### Exercise 4 - Hexadecimal Output
 - `enumerate` returns a two-element tuple with each iteration. This provides the numeric index of each iteration.
 - `reversed` returns a new iterable
 - `**` operator is used for exponentiation
+
+## Ch 2 Strings
+
+### Exercise 5 - Pig Latin
+- If you find yourself repeating yourself or writing a long expression, there's probably a better, more pythonic, way of doing things
+- The `in` operator works on all sequences (strings, lists, tuples). Using `in` on a dict will work but will only search through the keys, ignoring the values
+- Slices are Python's way of retrieving a subset of elements from a sequence
 
 ### Acknowledgements
 Python Workout by Reuven Lerner, Published by Manning Publications, 2020
