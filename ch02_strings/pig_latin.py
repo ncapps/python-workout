@@ -1,5 +1,8 @@
-def pig_latin():
-    user_input = input("Translate a word to pig latin: ")
+def pig_latin(param=None):
+    if not param:
+        user_input = input("Translate a word to pig latin: ")
+    else:
+        user_input = param
 
     if user_input[0] in "aeiou":
         return f"{user_input}way"

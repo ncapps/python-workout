@@ -29,5 +29,11 @@
 - The `in` operator works on all sequences (strings, lists, tuples). Using `in` on a dict will work but will only search through the keys, ignoring the values
 - Slices are Python's way of retrieving a subset of elements from a sequence
 
-### Acknowledgements
+### Exercise 6 - Pig Latin Sentence
+- `str.split` can take an argument, which determines which string should be used as the separator between fields
+- As a general rule, its not a good idea to build strings with `+=`. Rather, you should add elements to a list using `list.append` and then invoke `str.join`
+- List are mutable and adding to a list with `append` is relatively inexpensive in both memory and computation
+- 
+
+# Resources
 Python Workout by Reuven Lerner, Published by Manning Publications, 2020
