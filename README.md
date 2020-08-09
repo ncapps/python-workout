@@ -1,4 +1,4 @@
-# Notes and Exercies from Python Workout by Reuven Lerner
+# Notes and Exercises from Python Workout by Reuven Lerner
 
 ## Ch 1 Numeric Types
 
@@ -33,6 +33,8 @@
 - `str.split` can take an argument, which determines which string should be used as the separator between fields
 - As a general rule, its not a good idea to build strings with `+=`. Rather, you should add elements to a list using `list.append` and then invoke `str.join`
 - List are mutable and adding to a list with `append` is relatively inexpensive in both memory and computation
+
+### Exercise 7 - Ubbi Dubbi
 - 
 
 # Resources
