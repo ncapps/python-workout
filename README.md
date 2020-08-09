@@ -35,7 +35,15 @@
 - List are mutable and adding to a list with `append` is relatively inexpensive in both memory and computation
 
 ### Exercise 7 - Ubbi Dubbi
-- 
+- Iterate over characters in a string, append items to a list
+
+### Exercise 8 - Sorting a string
+- The `sorted` function, which takes an iterable, returns a list with its elements sorted
+- The idea behind Unicode is that we should be able to use computers to represent any character used in any language from any time
+- Unicode assigns each character a unique number (known as *code point*)
+- The code point can be very large, so we translate it into a format that can be translated as bytes
+- Python uses what's known as UTF-8
+- It's easy forget that there's a differences between bytes and characters
 
 # Resources
 Python Workout by Reuven Lerner, Published by Manning Publications, 2020
