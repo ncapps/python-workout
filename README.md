@@ -45,5 +45,13 @@
 - Python uses what's known as UTF-8
 - It's easy forget that there's a differences between bytes and characters
 
+## Ch 3 Lists and Tuples
+
+### Exercise 9 - First-last
+- Data is strongly typed, variables don't have any types
+- We can write a function that expects to take any indexable type and return something appropriate
+- Slices allow you to grab just part of any sequence
+
+
 # Resources
 Python Workout by Reuven Lerner, Published by Manning Publications, 2020
