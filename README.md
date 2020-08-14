@@ -62,6 +62,12 @@
 - `itemgetter` takes any number of arguments and returns a function that applies each of those arguments in square brackets
 - `sorted` returns a new sorted list from the items in the *iterable* argument
 - The optional `key` argument specifies a function of one argument that is used to extract a comparison key
+- To create an anonymous function with lambda, use the reserved world lambda and then list any parameters before a colon. Then write the one-line expression that the lambda returns. And indeed, in a Python lambda, you’re restricted to a single expression--no assignment is allowed, and everything must be on a single line
+
+### Exercise 12 - Word with the most repeated letters
+- `Counter`, a subclass of `dict` defined in the `collections` module, makes it easy to count things
+- Passing a function to the `key` parameter in `max`
+- The built-in max function takes a key function, just like sorted, and returns the element that received the highest score.
 
 # Resources
 Python Workout by Reuven Lerner, Published by Manning Publications, 2020
