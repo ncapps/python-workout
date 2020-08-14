@@ -57,5 +57,11 @@
 - The "takes any number of arguments" parameter is typically called `*args`
 - In Python, everthing is considered `True` in an `if` except `None, False, 0` and empty collections
 
+### Exercise 11 - Alphabetizing names
+- Variables defined outside of any function are generally referred to as "constants" and are defined in ALL CAPS
+- `itemgetter` takes any number of arguments and returns a function that applies each of those arguments in square brackets
+- `sorted` returns a new sorted list from the items in the *iterable* argument
+- The optional `key` argument specifies a function of one argument that is used to extract a comparison key
+
 # Resources
 Python Workout by Reuven Lerner, Published by Manning Publications, 2020
