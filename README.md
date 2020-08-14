@@ -52,6 +52,10 @@
 - We can write a function that expects to take any indexable type and return something appropriate
 - Slices allow you to grab just part of any sequence
 
+### Exercise 10 - Summing anything
+- A function can take any number of arguments with the "splat" (*) operator
+- The "takes any number of arguments" parameter is typically called `*args`
+- In Python, everthing is considered `True` in an `if` except `None, False, 0` and empty collections
 
 # Resources
 Python Workout by Reuven Lerner, Published by Manning Publications, 2020
