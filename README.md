@@ -73,5 +73,18 @@
 - Used `sorted` and `itemgetter` to sort the list of tuples
 - Print padding using a colon `(:)` character. `{1:10}` inserts spaces if the data contains fewer than 10 characters
 
+## Dictionaries and sets
+- Dicts are called *mappings* in Python, because the hash function *maps* our key to an integer, which we can then use to store our key-value pairs
+- Python's dicts:
+    - always store key-value pairs together
+    - guarantee very fast lookup for keys
+    - ensure key uniqueness
+    - don't guarantee anything regarding value lookup
+- Sets are like dicts without values
+
+### Exercise 14 - Restaurant
+- Invoke `strip` to remove space characters
+- Check for empty string with `if not`
+
 # Resources
 Python Workout by Reuven Lerner, Published by Manning Publications, 2020
