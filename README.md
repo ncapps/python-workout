@@ -86,5 +86,11 @@
 - Invoke `strip` to remove space characters
 - Check for empty string with `if not`
 
+### Exercise 15 - Rainfall
+- Use an infinite loop with `while True:`
+- Use `dict.get` with a default, to either get the current value associatd with the key or 0
+- Trap errors with `try` and `except`
+- `defaultdict`, a class defined in the `collections` module can be used to default a value when you ask for a key that doesn't exist
+
 # Resources
 Python Workout by Reuven Lerner, Published by Manning Publications, 2020
