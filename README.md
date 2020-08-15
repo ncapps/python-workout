@@ -69,5 +69,9 @@
 - Passing a function to the `key` parameter in `max`
 - The built-in max function takes a key function, just like sorted, and returns the element that received the highest score.
 
+### Exercise 13 - Printing Tuple Records
+- Used `sorted` and `itemgetter` to sort the list of tuples
+- Print padding using a colon `(:)` character. `{1:10}` inserts spaces if the data contains fewer than 10 characters
+
 # Resources
 Python Workout by Reuven Lerner, Published by Manning Publications, 2020
