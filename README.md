@@ -92,5 +92,15 @@
 - Trap errors with `try` and `except`
 - `defaultdict`, a class defined in the `collections` module can be used to default a value when you ask for a key that doesn't exist
 
+### Exercise 16 - Dictdiff
+- Using `dict.get` for shorter, more elegant, and more maintainable code
+- Collect all keys, put them in a `set` to ensure that each appears only once, and then iterate over the `set`
+- `dict.keys()` returns a special object type of `dict_keys`
+- Union `|`, intersection `&`
+
+### Exercise 17 - How many different numbers?
+- A `set` contains unique elements
+- If you have a list of values from which you want to remove all of the duplicates, you can just create a set
+
 # Resources
 Python Workout by Reuven Lerner, Published by Manning Publications, 2020
