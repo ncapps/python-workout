@@ -124,5 +124,10 @@ with open(filename, 'rb') as f:
         print(f'This chunk contains {len(one_chunk)} bytes')
 ```
 
+### Exercise 19 - /etc/passwd to dict
+- `str.split` returns a list of strings split by the delimiter
+- Use `str.startswith` to ignore certain lines
+- `with` is a general Python construct known as a *context manager*
+
 # Resources
 Python Workout by Reuven Lerner, Published by Manning Publications, 2020
