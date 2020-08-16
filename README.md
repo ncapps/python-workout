@@ -129,5 +129,10 @@ with open(filename, 'rb') as f:
 - Use `str.startswith` to ignore certain lines
 - `with` is a general Python construct known as a *context manager*
 
+### Exercise 20 - Word count
+- Use a `dict` to accumulate closely related data
+- Use a `set` to track a list of unique items. Use `set.update()` to add items to the set
+- `split()` with no arguments splits on whitespace and ignores `\n`
+
 # Resources
 Python Workout by Reuven Lerner, Published by Manning Publications, 2020
