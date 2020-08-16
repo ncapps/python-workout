@@ -73,7 +73,7 @@
 - Used `sorted` and `itemgetter` to sort the list of tuples
 - Print padding using a colon `(:)` character. `{1:10}` inserts spaces if the data contains fewer than 10 characters
 
-## Dictionaries and sets
+## Ch 4 Dictionaries and sets
 - Dicts are called *mappings* in Python, because the hash function *maps* our key to an integer, which we can then use to store our key-value pairs
 - Python's dicts:
     - always store key-value pairs together
@@ -101,6 +101,28 @@
 ### Exercise 17 - How many different numbers?
 - A `set` contains unique elements
 - If you have a list of values from which you want to remove all of the duplicates, you can just create a set
+
+## Ch 5 Files
+
+### Exercise 18 - Final line
+- Knowing how to read specific parts of a file, as opposed to the entire thing, is a useful and practical skill
+- `open` arguments
+    1. `filename`: is a string representing a valid filename
+    2. `mode`: Optional argument. `r, w, a` for read, write, or append. The `b` option is used for reading the file in byte, or binary, mode.
+- Use `with` to guarantee that the file has been closed by the end of the block
+- Binary mode using `b`
+    - Python expects the contents of a file to be valid UTF-8 formatted Unicode strings
+    - Binary files don't use Unicode
+    - Open a nontext file in *binary* or *bytes* mode using `b` in the `mode` argument
+    - There are no lines in a binary file. You should use the `read` method to retrieve a fixed number of bytes
+```
+with open(filename, 'rb') as f:
+    while True:
+        one_chunk = f.read(1000)
+        if not one_chunk:
+            break
+        print(f'This chunk contains {len(one_chunk)} bytes')
+```
 
 # Resources
 Python Workout by Reuven Lerner, Published by Manning Publications, 2020
