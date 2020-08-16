@@ -174,8 +174,13 @@ for one_filename in p.glob('*.conf'):
 - The `json.load` method reads a JSON-encoded string from a file and returns a combination of Python objects
 - Valid JSON uses double quotes ("), not single quotes (')
 - It's often easier and faster to make use of built-int data structures likes lists, tuples, and dicts instead of creating a class
-- 
- 
+- Use `defaultdict` from the `collections` module to default the value for a key that does not exist in a `dict`
+
+### Exercise 24 - Reverse Lines
+- Transforming files from one format into another and taking data from one file and creating another based on it are common tasks
+- `with` takes on or more objects and allows us to assign variables to them
+- Reverse a sequence using Python's slice syntax `s[::-1]`. Step size of -1 returns a reversed sequence.
+- Remove a newline character from the end of the line with `str.rstrip()`
 
 # Resources
 Python Workout by Reuven Lerner, Published by Manning Publications, 2020
