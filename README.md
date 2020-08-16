@@ -134,5 +134,34 @@ with open(filename, 'rb') as f:
 - Use a `set` to track a list of unique items. Use `set.update()` to add items to the set
 - `split()` with no arguments splits on whitespace and ignores `\n`
 
+### Exercise 21 - Longest word per file
+- Whenever you need to transform a collection of inputs into a collection of outputs, you should use comprehensions
+- List comprehensions are the most common, but set and dict comprehensions are also useful
+- Use `os.path.join` to combine the directory name with a filename
+- The easiest and most standard way to list files in a directory is `os.listdir`, a function in the `os` module. It returns a list of strings, the names of files in the directory
+```
+filenames = os.listdir('/etc/')
+```
+- You will need to add the directory name at the beginning with `os.path.join`, which works cross-platform
+- The `glob` module allows you to filter the filenames by a pattern. It returns a ist of strings, with each string containing the complete path to the file.
+```
+filenames = glob.glob('/etc/*.conf')
+```
+- The `pathlib` module also makes things easier in many ways.
+```python
+# create a pathlib.Path object
+import pathlib
+p = pathlib.Path('/etc/')
+
+# iterator that returns files in the directory
+for one_filename in p.iterdir():
+    print(one_filename)
+
+# get a list of files matching a pattern
+for one_filename in p.glob('*.conf'):
+    print(one_filename)
+
+```
+
 # Resources
 Python Workout by Reuven Lerner, Published by Manning Publications, 2020
