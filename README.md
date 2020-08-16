@@ -160,8 +160,13 @@ for one_filename in p.iterdir():
 # get a list of files matching a pattern
 for one_filename in p.glob('*.conf'):
     print(one_filename)
-
 ```
+
+### Exercise 22 - Reading and writing CSV
+- Python comes with a `csv` module that handles writing to and reading from CSV files
+- You can use `with` to open two separate files
+- Use `csv.reader` to read delimited records. Use the `delimiter` argument to separate on a character other than `,`
+- Use `csv.writer` to write delimited records
 
 # Resources
 Python Workout by Reuven Lerner, Published by Manning Publications, 2020
