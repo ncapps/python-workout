@@ -143,7 +143,7 @@ with open(filename, 'rb') as f:
 filenames = os.listdir('/etc/')
 ```
 - You will need to add the directory name at the beginning with `os.path.join`, which works cross-platform
-- The `glob` module allows you to filter the filenames by a pattern. It returns a ist of strings, with each string containing the complete path to the file.
+- The `glob` module allows you to filter the filenames by a pattern. It returns a list of strings, with each string containing the complete path to the file.
 ```
 filenames = glob.glob('/etc/*.conf')
 ```
@@ -167,6 +167,15 @@ for one_filename in p.glob('*.conf'):
 - You can use `with` to open two separate files
 - Use `csv.reader` to read delimited records. Use the `delimiter` argument to separate on a character other than `,`
 - Use `csv.writer` to write delimited records
+
+### Exercise 23 - JSON
+- JSON is a popular format for data exchange, in particular, many web services and APIs send and receive data using JSON
+- Python comes with a `json` module, which can be usd to turn JSON-encoded strings into Python objects
+- The `json.load` method reads a JSON-encoded string from a file and returns a combination of Python objects
+- Valid JSON uses double quotes ("), not single quotes (')
+- It's often easier and faster to make use of built-int data structures likes lists, tuples, and dicts instead of creating a class
+- 
+ 
 
 # Resources
 Python Workout by Reuven Lerner, Published by Manning Publications, 2020
