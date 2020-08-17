@@ -200,5 +200,12 @@ for one_filename in p.glob('*.conf'):
     4. Built-ins
 - Use a `dict` in which the functions are values instead of `if elif else` conditions
 
+### Exercise 27 - Password generator
+- `random.choice` returns one randomly chosen element from a sequence
+- Define and return inner functions to create numerous similar functions (closure)
+- The inner function is defined when the outer function is executed
+- We create a new inner function once for each time the outer function is invoked
+- The returned function references a variable in the outer function, where it was originally defined
+
 # Resources
 Python Workout by Reuven Lerner, Published by Manning Publications, 2020
