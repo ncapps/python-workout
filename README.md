@@ -182,5 +182,14 @@ for one_filename in p.glob('*.conf'):
 - Reverse a sequence using Python's slice syntax `s[::-1]`. Step size of -1 returns a reversed sequence.
 - Remove a newline character from the end of the line with `str.rstrip()`
 
+## Ch 6 Functions
+- Never use a mutable value, such as a list or dict, as a parameter's default value. Default values are stored and reused across calls to the function.
+
+### Exercise 25 - XML generator
+- `*args*` should be used when you'll put its values into a `for` loop. If you're grabbing elements from `*args` with numeric indexes, you're probably doing something wrong
+- make an argument optional by defining a default
+- When we define a function with `**kwargs`, we're telling Python that we might pass any name-value pair in the style `name=value`. These argument are used to create a `dict`, traditionally called `kwargs`, whose keys are the keyword names and whose values are the keyword values
+- Create a string from the key-value pairs in a `dict` using list comprehension
+
 # Resources
 Python Workout by Reuven Lerner, Published by Manning Publications, 2020
