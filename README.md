@@ -191,5 +191,14 @@ for one_filename in p.glob('*.conf'):
 - When we define a function with `**kwargs`, we're telling Python that we might pass any name-value pair in the style `name=value`. These argument are used to create a `dict`, traditionally called `kwargs`, whose keys are the keyword names and whose values are the keyword values
 - Create a string from the key-value pairs in a `dict` using list comprehension
 
+### Exercise 26 - Prefix notation calculator
+- The term *scoping* refers to the visibility of variables from within the program
+- Python has four levels of scoping (LEGB):
+    1. Local - variable defined inside a function
+    2. Enclosing function - A function defined inside another function is known as a *closure*
+    3. Global - changing global variables from within a function is almost always a bad idea
+    4. Built-ins
+- Use a `dict` in which the functions are values instead of `if elif else` conditions
+
 # Resources
 Python Workout by Reuven Lerner, Published by Manning Publications, 2020
