@@ -207,5 +207,30 @@ for one_filename in p.glob('*.conf'):
 - We create a new inner function once for each time the outer function is invoked
 - The returned function references a variable in the outer function, where it was originally defined
 
+## Ch 7 Functional programming with comprehensions
+- *Functional programming* aims to make programs more reliable by keeping functions short and data immutable
+- Short functions are easier to understand, test, and maintain
+- Python Comprehensions make it easy to create lists, sets, and dicts based on other data structures
+
+### Exercise 28 - Join numbers
+- When you want to translate an iterable into a list, you should use a comprehension
+- If you want to execute something for each element of an iterable, then a traditional `for` loop is better
+- *Transformations*, taking values in an iterable and producing a new iterable, should be executed with comprehensions
+- `str.join` only works on a sequence of strings
+- Each list comprehension contains two parts:
+    1. The source iterable
+    2. The expression we'll invoke once for each element
+- Generator expressions work similar to comprehensions but use less memory
+
+### Exercise 29 - Add numbers
+- `map` takes two arguments: a function and an iterable. It applies the function to each element of the iterable, returning a new iterable.
+- `filter` takes two arguments: a function and an iterable. It applies the function to each element, the output of the function determines whether the element will appear in the output.
+- Comprehension are considered to be the modern way of `map` and `filter`
+- Any *expression* is anything in Python that returns a value. Comprehensions use expressions.
+- `str.split` returns a list of strings
+- Use the `str.isdigit` method to filter for items that can be turned into numbers
+
+
+
 # Resources
 Python Workout by Reuven Lerner, Published by Manning Publications, 2020
