@@ -230,7 +230,12 @@ for one_filename in p.glob('*.conf'):
 - `str.split` returns a list of strings
 - Use the `str.isdigit` method to filter for items that can be turned into numbers
 
+### Exercise 30 - Flatten a list
+- List comprehensions allow us to evaluate an expression on each element of an iterable
+- Nested comprehensions allow us to iterate on lists of lists
 
+### Exercise 31 - Pig latin translation of a file
+- 
 
 # Resources
 Python Workout by Reuven Lerner, Published by Manning Publications, 2020
