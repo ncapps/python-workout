@@ -235,7 +235,10 @@ for one_filename in p.glob('*.conf'):
 - Nested comprehensions allow us to iterate on lists of lists
 
 ### Exercise 31 - Pig latin translation of a file
-- 
+- We can use nested list comprehensions to iterate over each line of the file
+- It's more memory efficient to return an iterator object than a list comprehension
+- A generator expression, which looks like a list comprehension, but uses round parantheses instead of square brackets
+- If you have a generator expression inside a function call, you don't need both sets of parentheses
 
 # Resources
 Python Workout by Reuven Lerner, Published by Manning Publications, 2020
