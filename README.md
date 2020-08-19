@@ -240,5 +240,10 @@ for one_filename in p.glob('*.conf'):
 - A generator expression, which looks like a list comprehension, but uses round parantheses instead of square brackets
 - If you have a generator expression inside a function call, you don't need both sets of parentheses
 
+### Exercise 32 - Flip a dict
+- dict comprehensions provide an easy way to create a dict based on an iterable
+- Use the `dict.items` method to loop over the elements of a dict
+- In a comprehension, I’m trying to create a new object based on an old one. It’s all about the values that are returned by the expression at the start of the comprehension. By contrast, `for` loops are about commands, and executing those commands.
+
 # Resources
 Python Workout by Reuven Lerner, Published by Manning Publications, 2020
