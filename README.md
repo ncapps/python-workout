@@ -248,5 +248,10 @@ for one_filename in p.glob('*.conf'):
 ### Exercise 33 - Transform values
 - You can receive a function as a function argument, and comprehensions can help us elegantly solve a wide variety of problems
 
+### Exercise 34 - (Almost) supervocalic words
+- The `<` operator checks to see if the item on the left is a subset of the item on right when working with a `set`
+- The difference between a list comprehension and a set comprehension is a pair of brackets. Square for list (`[]`), Curly braces for set (`{}`)
+- Using sets as the basis for textual comparisons is useful
+
 # Resources
 Python Workout by Reuven Lerner, Published by Manning Publications, 2020
