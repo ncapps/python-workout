@@ -245,5 +245,8 @@ for one_filename in p.glob('*.conf'):
 - Use the `dict.items` method to loop over the elements of a dict
 - In a comprehension, I’m trying to create a new object based on an old one. It’s all about the values that are returned by the expression at the start of the comprehension. By contrast, `for` loops are about commands, and executing those commands.
 
+### Exercise 33 - Transform values
+- You can receive a function as a function argument, and comprehensions can help us elegantly solve a wide variety of problems
+
 # Resources
 Python Workout by Reuven Lerner, Published by Manning Publications, 2020
