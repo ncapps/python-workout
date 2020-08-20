@@ -253,5 +253,9 @@ for one_filename in p.glob('*.conf'):
 - The difference between a list comprehension and a set comprehension is a pair of brackets. Square for list (`[]`), Curly braces for set (`{}`)
 - Using sets as the basis for textual comparisons is useful
 
+### Exercise 35 - Gematria
+- Get letters of the english alphabet using `string.ascii_lowercase`
+- Use the `enumerate` built-in iterator to get the index of each item in a sequence
+
 # Resources
 Python Workout by Reuven Lerner, Published by Manning Publications, 2020
