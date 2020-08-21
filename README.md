@@ -257,5 +257,32 @@ for one_filename in p.glob('*.conf'):
 - Get letters of the english alphabet using `string.ascii_lowercase`
 - Use the `enumerate` built-in iterator to get the index of each item in a sequence
 
+## Ch 8 Modules and packages
+- The most commonly used things in the standard library, such as lists and dicts, are built into the language, thanks to a namespace known as `builtins`
+- When you use `import` to load a module
+    - Python looks for the module in a number of directories, defined in a list of strings called `sys.path`. If Python encounters a file in one of those diretories, it loads the file and stops searching in any other directories
+    - There are a number of ways to modify `sys.path`
+
+### Exercise 36 - Sales tax
+- Use integers or the `Decimal` class when performing calculations involving money
+- Decent error checking is important. Create your own exception class and raise it.
+
+### Exercise 37 - Menu
+- This is an example of a *dispatch table*
+- Use `**kwargs` parameter to create that dispatch table dynamically
+- `if __name__ == `__main__:`
+    - When a module is loaded, its code is executed from the start of the file until the end
+    - The `__name__` variable is equal to `__main__` when the code is running in the initial, default, and top-level namespace provided by Python. Otherwise `__name__` is equal to the module that imported it
+    - This should typically only appear once, at the end of your module file
+
+### Modules vs. packages
+- A module is a single file, with a '.py' suffix. We can load the module using `import`.
+- A package is a directory containing one or more Python modules. Assuming the package is in `sys.path`, you can `import` a module from package: `from mypackage import first`
+- To use `import mypackage`:
+    - You must have a file named `__init__.py` in the `mypackage` directory
+    - Importing `mypackage` effectively means that `__init__.py` is loaded and thus executed. Inside of that file, you can import one or more of the modules within the package
+- "Poetry" makes the process of creating a distribution package easier
+
+
 # Resources
 Python Workout by Reuven Lerner, Published by Manning Publications, 2020
