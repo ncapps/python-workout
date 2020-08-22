@@ -283,6 +283,17 @@ for one_filename in p.glob('*.conf'):
     - Importing `mypackage` effectively means that `__init__.py` is loaded and thus executed. Inside of that file, you can import one or more of the modules within the package
 - "Poetry" makes the process of creating a distribution package easier
 
+## Ch 9 Objects
+
+### Exercise 38 - Ice cream scoop
+- Every object has a type and one or more attributes
+- The `__init__` method is invoked after an object has been created. Its parameters allow us to set attributes on newly created instances.
+- The first paramter in every method is traditionally called `self`. `self` isn't actually a reserved word in Python.
+- In Python, because everything is public, there’s no real need for getters and setters.
+- Classes are *callable*, meaning that they can be invoked with parentheses.
+- Whereas other programming languages talk about “instance variables” and “class variables,” Python developers have only one tool, namely the attribute. You can think of the attributes of an object as its own private dict.
+- As a general rule, you want to define all of your attributes in `__init__` to ensure that your code is as readable and obvious as possible
+- 
 
 # Resources
 Python Workout by Reuven Lerner, Published by Manning Publications, 2020
