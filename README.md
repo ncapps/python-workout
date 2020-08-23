@@ -317,5 +317,24 @@ class Scoop():
 - When writing classes, it’s typical and traditional to define data attributes on instances and method attributes on classes
 - Class attributes are just another case of attributes on a Python object. This means that we can and should reason about class attributes the same as all others, with the ICPO lookup rule. You can access them on the class (as ClassName.attrname) or on an instance (as one_instance.attrname).
 
+## Exercise 41 - A bigger bowl
+- The idea of a subclass is that it does everything the parent class does, but then goes a bit further with more specific functionality. 
+- Inheritance allows us to apply the DRY principle to our classes, and to keep them organized in our heads.
+- The `super` built-in allows us to invoke a method on a parent object without explicitly naming that parent. 
+```
+class Person():
+    def __init__(self, name):
+        self.name = name
+ 
+    def greet(self):
+        return f'Hello, {self.name}'
+ 
+class Employee(Person)
+    def __init__(self, name, id_number):
+        super().__init__(name)
+        self.id_number = id_number
+```
+
+
 # Resources
 Python Workout by Reuven Lerner, Published by Manning Publications, 2020

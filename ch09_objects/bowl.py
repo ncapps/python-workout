@@ -9,7 +9,7 @@ class Bowl():
 
     def add_scoops(self, *new_scoops):
         for one_scoop in new_scoops:
-            if len(self.scoops) < Bowl.max_scoops:
+            if len(self.scoops) < self.max_scoops:
                 self.scoops.append(one_scoop)
 
     def __repr__(self):
