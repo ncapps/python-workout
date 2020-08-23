@@ -335,6 +335,9 @@ class Employee(Person)
         self.id_number = id_number
 ```
 
+## Exercise 42 - FlexibleDict
+- The __getitem__ method of a `dict` object is always associated with square brackets
+
 
 # Resources
 Python Workout by Reuven Lerner, Published by Manning Publications, 2020
