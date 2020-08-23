@@ -270,7 +270,7 @@ for one_filename in p.glob('*.conf'):
 ### Exercise 37 - Menu
 - This is an example of a *dispatch table*
 - Use `**kwargs` parameter to create that dispatch table dynamically
-- `if __name__ == `__main__:`
+- `if __name__ == '__main__':
     - When a module is loaded, its code is executed from the start of the file until the end
     - The `__name__` variable is equal to `__main__` when the code is running in the initial, default, and top-level namespace provided by Python. Otherwise `__name__` is equal to the module that imported it
     - This should typically only appear once, at the end of your module file
@@ -293,7 +293,25 @@ for one_filename in p.glob('*.conf'):
 - Classes are *callable*, meaning that they can be invoked with parentheses.
 - Whereas other programming languages talk about “instance variables” and “class variables,” Python developers have only one tool, namely the attribute. You can think of the attributes of an object as its own private dict.
 - As a general rule, you want to define all of your attributes in `__init__` to ensure that your code is as readable and obvious as possible
-- 
+
+### Exercise 39 - Ice cream bowl
+- An important technique is *composition*, when one object contains another object
+- To print the object, we simply invoke `print()`. This has the effect of calling the __repr__ method on our object, assuming that one is defined.
+- You can define __repr__, __str__, or both on your objects. In theory, __repr__ produces strings that are meant for developers and are legitimate Python syntax.
+- By contrast, __str__ is how your object should appear to end users.
+- Inheritance describes an "is-a" relationship
+- Composition describes an "has-a" relationship
+- As of Python 3.7, you can cut out some of the boilerplate class-creation code with the `dataclass` decorator. The `@dataclass` decorator writes the __init__ method for you.
+``` python
+@dataclass
+class Scoop():
+    flavor : str
+```
+- Python searches for attributes in a standard path: (ICPO):
+    1. Instance
+    2. Class
+    3. Parents
+    4. Object
 
 # Resources
 Python Workout by Reuven Lerner, Published by Manning Publications, 2020
