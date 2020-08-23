@@ -313,5 +313,9 @@ class Scoop():
     3. Parents
     4. Object
 
+## Exercise 40 - Bowl limits
+- When writing classes, it’s typical and traditional to define data attributes on instances and method attributes on classes
+- Class attributes are just another case of attributes on a Python object. This means that we can and should reason about class attributes the same as all others, with the ICPO lookup rule. You can access them on the class (as ClassName.attrname) or on an instance (as one_instance.attrname).
+
 # Resources
 Python Workout by Reuven Lerner, Published by Manning Publications, 2020
