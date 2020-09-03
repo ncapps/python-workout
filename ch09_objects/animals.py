@@ -25,6 +25,25 @@ class Parrot(Animal):
     def __init__(self, color):
         super().__init__(color, 2)
 
+class Cage():
+    def __init__(self, cage_id):
+        self.cage_id = cage_id
+        self.animals = []
+    
+    def add_animals(self, *animals):
+        for one_animal in animals:
+            self.animals.append(one_animal)
+
+    def __repr__(self):
+        output = f'Cage {self.cage_id}\n'
+        output += '\n'.join('\t' + str(animal)
+                            for animal in self.animals)
+
+        return output
+    
+
+
+
 
 wolf = Wolf('black')
 sheep = Sheep('white')
@@ -35,3 +54,12 @@ print(wolf)
 print(sheep)
 print(snake)
 print(parrot)
+
+c1 = Cage(1)
+c1.add_animals(wolf, sheep)
+
+c2 = Cage(2)
+c2.add_animals(snake, parrot)
+
+print(c1)
+print(c2)

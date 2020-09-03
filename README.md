@@ -343,5 +343,8 @@ class Employee(Person)
 - Just as a module has a __name__ attribute that reflects what module was loaded, classes have a __name__ attribute, which is a string containing the name of the current class
 - An *abstract base class* is a class we won't actually instantiate, but fomr which other classes will inherit
 
+### Exercise 44 - Cages
+- we could use `list.extend` to add all of the new animals to `list.animals`
+
 ## Resources
 Python Workout by Reuven Lerner, Published by Manning Publications, 2020
