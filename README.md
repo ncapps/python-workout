@@ -346,5 +346,11 @@ class Employee(Person)
 ### Exercise 44 - Cages
 - we could use `list.extend` to add all of the new animals to `list.animals`
 
+### Exercise 45 - Zoo
+- use a nested list comprehension
+- In Python, all data is public (i.e., there’s no private or protected)
+- Python tries to strike a balance, offering all of the object-oriented features we’re likely to want or use, but in a simple, nonconfrontational way
+
+
 ## Resources
 Python Workout by Reuven Lerner, Published by Manning Publications, 2020
