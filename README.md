@@ -313,11 +313,11 @@ class Scoop():
     3. Parents
     4. Object
 
-## Exercise 40 - Bowl limits
+### Exercise 40 - Bowl limits
 - When writing classes, it’s typical and traditional to define data attributes on instances and method attributes on classes
 - Class attributes are just another case of attributes on a Python object. This means that we can and should reason about class attributes the same as all others, with the ICPO lookup rule. You can access them on the class (as ClassName.attrname) or on an instance (as one_instance.attrname).
 
-## Exercise 41 - A bigger bowl
+### Exercise 41 - A bigger bowl
 - The idea of a subclass is that it does everything the parent class does, but then goes a bit further with more specific functionality. 
 - Inheritance allows us to apply the DRY principle to our classes, and to keep them organized in our heads.
 - The `super` built-in allows us to invoke a method on a parent object without explicitly naming that parent. 
@@ -335,9 +335,13 @@ class Employee(Person)
         self.id_number = id_number
 ```
 
-## Exercise 42 - FlexibleDict
+### Exercise 42 - FlexibleDict
 - The __getitem__ method of a `dict` object is always associated with square brackets
 
+### Exercise 43 - Animals
+- By calling super().__init__, we know that the right method will be called on the right object
+- Just as a module has a __name__ attribute that reflects what module was loaded, classes have a __name__ attribute, which is a string containing the name of the current class
+- An *abstract base class* is a class we won't actually instantiate, but fomr which other classes will inherit
 
-# Resources
+## Resources
 Python Workout by Reuven Lerner, Published by Manning Publications, 2020
