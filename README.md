@@ -351,6 +351,22 @@ class Employee(Person)
 - In Python, all data is public (i.e., there’s no private or protected)
 - Python tries to strike a balance, offering all of the object-oriented features we’re likely to want or use, but in a simple, nonconfrontational way
 
+## Ch 10 Iterators and generators
+- Iterable objects (strings, lists, dicts) implement the iterator protocol which consists of three parts:
+    1. The __iter__ method, which returns an iterator
+    2. The __next__ method, which must be defined on the iterator
+    3. The StopIteration exception, which the iterator raises to signal the end of the iterations
+- Generator expressions look and work similarly to list comprehensions, except that you use round parentheses rather than square brackets
+- Generator function is something that looks like a function, but when executed acts like an iterator
+- interable vs iterator
+    - An iterable object can be put inside a for loop or list comprehension. For something to be iterable, it must implement the `__iter__` method. That method should return an iterator.
+    - An iterator is an object that implements the `__next__` method.
+
+### Exercise 46 MyEnumerate
+- we implement `__iter__` on the main class, but its job is to return a new instance of the helper class
+- 
+
+
 
 ## Resources
 Python Workout by Reuven Lerner, Published by Manning Publications, 2020
