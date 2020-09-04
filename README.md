@@ -372,7 +372,12 @@ class Employee(Person)
 - `os.listdir` only returns the filenames
 - Using except without specifying which exception you might get is generally frowned upon, all the more so if you pair it with pass.
 - This may cause problems because you haven’t trapped specific exceptions or logged the errors
+- In generator functions, we don’t need to explicitly raise StopIteration. That happens automatically when the generator reaches the end of the function. 
+- `yield` indicates that you want to keep the generator going and return a value for the current iteration, while `return` indicates that you want to exit completely.
 
+### Exercise 49 Elapsed since
+- Normally, invoking a function multiple times means that the local variables are reset with each invocation. However, a generator function works differently: it’s only invoked once, and thus has a single stack frame
+- This means that the local variables, including parameters, retain their values across calls.
 
 ## Resources
 Python Workout by Reuven Lerner, Published by Manning Publications, 2020
