@@ -364,8 +364,9 @@ class Employee(Person)
 
 ### Exercise 46 MyEnumerate
 - we implement `__iter__` on the main class, but its job is to return a new instance of the helper class
-- 
 
+### Exercise 47 Circle
+-  Modulus is often used in programs to ensure that we can wrap around as many times as we need
 
 
 ## Resources
