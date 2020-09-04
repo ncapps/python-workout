@@ -379,5 +379,17 @@ class Employee(Person)
 - Normally, invoking a function multiple times means that the local variables are reset with each invocation. However, a generator function works differently: it’s only invoked once, and thus has a single stack frame
 - This means that the local variables, including parameters, retain their values across calls.
 
+### Exercise 50 MyChain
+- the `itertools` module makes it easy to create many types of iterators
+- the `chain` object takes any number of iterables as arguments and then returns each of their elements as if they were port of a single iterable
+- The built-in `zip` function returns an iterator that, given iterable arguments, returns tuples taken from those arguments’ elements
+
+Exercises in this chapter demonstrated how to: 
+- Add the iterator protocol to a class you’ve written
+- Add the iterator protocol to a class via a helper iterator class
+- Write generator functions that filter, modify, and add to iterators that you would otherwise have created or used
+- Use generator expressions for greater efficiency than list comprehensions
+
+
 ## Resources
 Python Workout by Reuven Lerner, Published by Manning Publications, 2020
