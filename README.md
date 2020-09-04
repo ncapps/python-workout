@@ -368,6 +368,11 @@ class Employee(Person)
 ### Exercise 47 Circle
 -  Modulus is often used in programs to ensure that we can wrap around as many times as we need
 
+### Exercise 48 All lines, all files
+- `os.listdir` only returns the filenames
+- Using except without specifying which exception you might get is generally frowned upon, all the more so if you pair it with pass.
+- This may cause problems because you haven’t trapped specific exceptions or logged the errors
+
 
 ## Resources
 Python Workout by Reuven Lerner, Published by Manning Publications, 2020
